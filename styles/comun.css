@@ -1,0 +1,167 @@
+/*
+   este archivo esta para cargar los estilos comunes que pueden llegar a tener
+   los dos archivos html de Youtube
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+:root{
+  --color1: #0F0F0F;
+  --color2: #f1f1f1;
+  --color2l: #aaa;
+  --color2ll: #ffffff33;
+  --color2lb: #272727;
+  --color3: #020202;
+  --color4: #3e9ae8;
+}
+*{
+  box-sizing: border-box;
+  background: transparent;
+  color: var(--color2);
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+body{
+  background-color: var(--color1);
+  height: 10000px;
+}
+.flex{
+  display: flex;
+}
+.flex-end{
+  justify-content: end;
+}
+.flex-center-content{
+  justify-content: center;
+  align-items: center;
+}
+.sticky{
+  position: sticky;
+  top: 0;
+}
+a{
+  text-decoration: none;
+}
+[class*="nav-icono"]{
+  fill: var(--color2);
+  width: 24px;
+  height: 24px;
+  /* padding: 8px; */
+  margin: 8px 4px;
+}
+.audio,.tres-puntos{
+  margin: 0 6px;
+}
+.nav-icono-yt{
+  margin-left: 28px;
+  height: 20px;
+  width: 90px;
+}
+#yt-idioma{
+  color: var(--color2l);
+  font-size: 9px;
+  display: flex;
+  height: 100%;
+  position: relative;
+  bottom: 8px;
+}
+.nav-icono-acceder, #acceder{
+  padding: 0;
+  fill: var(--color4);
+  color: var(--color4);
+}
+#barraDeNavegacion{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  padding: 0 12px;
+}
+.icono-contenedor a, .icono-contenedor{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.barraBusqueda{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.icono-acceder{
+  border: 1px solid var(--color2ll);
+  padding: 0 10px 0 8px;
+  height: 36px;
+  font-size: 14px;
+  line-height: 36px;
+  border-radius: 18px;
+  font-weight: 500;
+}
+.icono-acceder svg{
+  margin-right: 8px;
+}
+#acceder{
+  font-weight: 500;
+}
+.no-tlf{
+  display: none;
+}
+
+@media only screen and (max-width: 300px){
+  .audio,.tres-puntos{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 450px){
+  .lupa,.audio,.tres-puntos{
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 663px) {
+  .no-tlf{
+    display: flex;
+    width: 100%;
+    max-width: 732px;
+    margin-left: 80px;
+  }
+  .barraBusqueda{
+    justify-content: center;
+    width: 100%;
+  }
+  #Buscar{
+    padding-left: 16px;
+    box-sizing: content-box;
+    height: 38px;
+    display: flex;
+    border: 1px solid var(--color2lb);
+    border-radius: 40px 0 0 40px;
+    width: 100%;
+    min-width: 20px;
+    max-width: 732px;
+  }
+  #Buscar:focus-visible{
+    outline: var(--color4) 1px solid;
+    margin-right: 1px;
+    
+  }
+  .lupa{
+    margin-right: 16px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color2lb);
+    border-radius: 0 40px 40px 0;
+    width: 64px;
+    padding: 0 8px;
+  }
+  .audio a{
+    width: 40px;
+  }
+  .audio{
+    background-color: var(--color2lb);
+    border-radius: 50%;
+    margin-right: 40px;
+  }
+}
