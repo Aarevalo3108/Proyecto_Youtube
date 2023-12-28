@@ -1,4 +1,220 @@
 /* 
   estilos para la pagina principal de Youtube.
 */
-
+:root{
+  --color1: #0F0F0F;
+  --color2: #f1f1f1;
+  --color2l: #aaa;
+  --color2ll: #ffffff33;
+  --color2lb: #272727;
+  --colorHover: #323232;
+  --color3: #020202;
+  --color4: #3e9ae8;
+}
+header{
+  background-color: var(--color1);
+}
+main{
+  padding: 24px;
+}
+.contenedor-etiquetas{
+  align-items: center;
+  overflow: hidden;
+  gap: 10px;
+  margin-left: 16px;
+  height: 60px;
+}
+.etiquetasyt:first-child{
+  background-color: var(--color2);
+  color: black;
+}
+.etiquetasyt{
+  display: flex;
+  background-color: var(--color2lb);
+  padding: 8px 10px;
+  font-weight: 500;
+  border-radius: 8px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+.etiquetasyt:nth-child(n+2):hover{
+  transition: 1s;
+  background-color: #535353;
+}
+.flechaSiguiente{
+  display: flex;
+  position: absolute;
+  right: 0;
+}
+.flechaSiguiente div{
+  height: 60px;
+  width: 26px;
+  background: transparent;
+  background: linear-gradient(90deg, #ffffff00 0%, var(--color1) 100%);
+}
+.flechaSiguiente .contenedor-flecha{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 66px;
+  height: 60px;
+  background-color: var(--color1);
+}
+.flechaSiguiente a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+}
+.flechaSiguiente a:hover{
+  background-color: var(--colorHover);
+}
+.flechaSiguiente a svg{
+  fill: var(--color2);
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+}
+.anuncio{
+  background-color: black;
+  padding: 24px 24px 32px 42px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-right: 15px;
+  display: none;
+}
+.contenedor-X{
+  height: 24px;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: -10px;
+}
+.X{
+  fill: var(--color2);
+  height: 24px;
+  width: 24px;
+}
+#ytmusic{
+  height: 24px;
+  width: 320px;
+}
+.boton-descarga{
+  border-radius: 18px;
+  margin-top: 20px;
+  border: 1px solid var(--color2);
+  width: fit-content;
+  padding: 7px 14px;
+  font-weight: 500;
+  font-size: 14px;
+}
+.contenido{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.fila-contenido{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.video{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.img-video{
+  width: 100%;
+  border-radius: 10px;
+}
+.perfil{
+  display: flex;
+  gap: 10px;
+}
+.img-perfil{
+  width: 32px;
+  border-radius: 50%;
+}
+.contenido-perfil h2{
+  font-size: 16px;
+}
+.contenido-perfil h3 a, .contenido-perfil span{
+  font-size: 14px;
+  color: var(--color2l);
+  font-weight: normal;
+}
+.seccion-shorts{
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  gap: 24px;
+  overflow: hidden;
+}
+.logo-shorts{
+  height: 24px;
+  width: 24px;
+}
+.titulo-shorts{
+  display: flex;
+  gap: 8px;
+}
+.titulo-shorts h2{
+  font-size: 20px;
+}
+.shorts{
+  display: flex;
+  gap: 12px;
+  border-bottom: 1px solid var(--color2lb);
+  padding-bottom: 50px;
+}
+.short, .contenido-short{
+  display: flex;
+  flex-direction: column;
+}
+.contenido-short{
+  gap: 6px;
+}
+.short{
+  row-gap: 12px;
+}
+.short-img{
+  height: 420px;
+  width: 240px;
+  border-radius: 15px;
+}
+.contenido-short h3{
+  font-size: 16px;
+  font-weight: 500;
+}
+.contenido-short span{
+  font-size: 14px;
+  color: var(--color2l);
+}
+.contenedor-mostrar-mas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: -42px;
+}
+.mostrar-mas-shorts{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 360px;
+  padding: 4px 0;
+  border: 1px solid var(--color2lb);
+  border-radius: 40px;
+  background-color: var(--color1);
+}
+.mostrar-mas-shorts:hover{
+  background-color: var(--colorHover);
+}
+.flecha-abajo{
+  height: 24px;
+  width: 24px;
+  fill: var(--color2);
+}

@@ -22,7 +22,6 @@
 }
 body{
   background-color: var(--color1);
-  height: 10000px;
 }
 .flex{
   display: flex;
