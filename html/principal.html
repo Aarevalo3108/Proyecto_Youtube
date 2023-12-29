@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- hojas de estilos (una comun de primero y la dedicada a la pagina principal) -->
   <link rel="stylesheet" href="../styles/comun.css">
   <link rel="stylesheet" href="../styles/principal.css">
+  <!-- Links para modificar el icono de la pertaña de youtube -->
   <link rel="shortcut icon" href="https://www.youtube.com/s/desktop/28b0985e/img/favicon.ico" type="image/x-icon">
   <link rel="icon" href="https://www.youtube.com/s/desktop/28b0985e/img/favicon_32x32.png" sizes="32x32">
   <link rel="icon" href="https://www.youtube.com/s/desktop/28b0985e/img/favicon_48x48.png" sizes="48x48">
@@ -13,10 +15,11 @@
   <title>Youtube</title>
 </head>
 <body>
-  <!-- header (por ahora solo barra de navegacion) -->
+  <!-- header (barra de navegacion) -->
   <header class="sticky">
     <!-- barra de navegacion -->
     <nav id="barraDeNavegacion">
+      <!-- boton tres lineas y logo de Youtube -->
       <div class="flex flex-center-content col-yt">
         <div class="icono-contenedor"><button type="button" class="tres-lineas"><svg class="nav-icono"  xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"  focusable="false" ><path d="M21 6H3V5h18v1zm0 5H3v1h18v-1zm0 6H3v1h18v-1z"></path></svg></button>
         </div>
@@ -50,12 +53,14 @@
         <div class="icono-contenedor lupa"><a href=""><svg class="nav-icono" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24"  viewBox="0 0 24 24"  focusable="false" ><path d="m20.87 20.17-5.59-5.59C16.35 13.35 17 11.75 17 10c0-3.87-3.13-7-7-7s-7 3.13-7 7 3.13 7 7 7c1.75 0 3.35-.65 4.58-1.71l5.59 5.59.7-.71zM10 16c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"></path></svg></a></div>
         <div class="icono-contenedor audio"><button><svg class="nav-icono" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"  focusable="false" ><path d="M12 3c-1.66 0-3 1.37-3 3.07v5.86c0 1.7 1.34 3.07 3 3.07s3-1.37 3-3.07V6.07C15 4.37 13.66 3 12 3zm6.5 9h-1c0 3.03-2.47 5.5-5.5 5.5S6.5 15.03 6.5 12h-1c0 3.24 2.39 5.93 5.5 6.41V21h2v-2.59c3.11-.48 5.5-3.17 5.5-6.41z"></path></svg></button></div>
       </div>
+      <!-- boton de 3 puntos y acceder -->
       <div class="flex flex-center-content">
         <div class="icono-contenedor tres-puntos"><button><svg class="nav-icono" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24"  viewBox="0 0 24 24"  focusable="false" ><path d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"></path></svg></button></div>
         <div class="icono-contenedor icono-acceder"><a href="https://accounts.google.com/InteractiveLogin/signinchooser?continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Des-419%26next%3D%252F&ec=65620&hl=es-419&passive=true&service=youtube&uilel=3&ifkv=ASKXGp3D44CgeNnb1mrkqu5T8TDoEU-Jc7aT4AcoxWrjxUYhTh98vM6LcJgkUbcYjgrYQDh9Kt0dQw&theme=glif&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><svg class="nav-icono-acceder" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"  focusable="false" ><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 1c4.96 0 9 4.04 9 9 0 1.42-.34 2.76-.93 3.96-1.53-1.72-3.98-2.89-7.38-3.03A3.996 3.996 0 0016 9c0-2.21-1.79-4-4-4S8 6.79 8 9c0 1.97 1.43 3.6 3.31 3.93-3.4.14-5.85 1.31-7.38 3.03C3.34 14.76 3 13.42 3 12c0-4.96 4.04-9 9-9zM9 9c0-1.65 1.35-3 3-3s3 1.35 3 3-1.35 3-3 3-3-1.35-3-3zm3 12c-3.16 0-5.94-1.64-7.55-4.12C6.01 14.93 8.61 13.9 12 13.9c3.39 0 5.99 1.03 7.55 2.98C17.94 19.36 15.16 21 12 21z"></path></svg><span id="acceder">Acceder</span></a></div>
       </div>
     </nav>
   </header>
+  <!-- Anuncio (por ahora no visible) -->
   <div class="anuncio">
     <div class="contenedor-X">
       <a href="">
@@ -66,8 +71,11 @@
     <h1 class="titulo-anuncio">Escucha musica sin anuncios con Music Premium</h1>
     <a class="boton-descarga" href="">Descargar ahora</a>
   </div>
+  <!-- Contenido principal y barra lateral -->
   <main class="contenido">
+    <!-- Barra lateral con sus diversos botones -->
     <aside class="barra-lateral">
+      <!-- Seccion con boton Principal, Shorts y Suscriptores -->
       <div class="seccion-barra">
         <a href="./principal.html" class="barra-botones seleccionado"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24" focusable="false"><g><path d="M4 21V10.08l8-6.96 8 6.96V21h-6v-6h-4v6H4z"></path></g></svg>
           <span>Principal</span></a>
@@ -76,12 +84,14 @@
         <a href="" class="barra-botones"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24" focusable="false"><path d="M10 18v-6l5 3-5 3zm7-15H7v1h10V3zm3 3H4v1h16V6zm2 3H2v12h20V9zM3 10h18v10H3V10z"></path></svg>
           <span>Suscriptores</span></a>
       </div>
+      <!-- Seccion con boton de Tu e Historial -->
       <div class="seccion-barra">
         <a href="" class="barra-botones"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24" focusable="false"><path d="m11 7 6 3.5-6 3.5V7zm7 13H4V6H3v15h15v-1zm3-2H6V3h15v15zM7 17h13V4H7v13z"></path></svg>
           <span>Tu</span></a>
         <a href="" class="barra-botones"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false"><g><path d="M14.97 16.95 10 13.87V7h2v5.76l4.03 2.49-1.06 1.7zM22 12c0 5.51-4.49 10-10 10S2 17.51 2 12h1c0 4.96 4.04 9 9 9s9-4.04 9-9-4.04-9-9-9C8.81 3 5.92 4.64 4.28 7.38c-.11.18-.22.37-.31.56L3.94 8H8v1H1.96V3h1v4.74c.04-.09.07-.17.11-.25.11-.22.23-.42.35-.63C5.22 3.86 8.51 2 12 2c5.51 0 10 4.49 10 10z"></path></g></svg>
           <span>Historial</span></a>
       </div>
+      <!-- Seccion con Texto explicativo y boton de acceder -->
       <div class="seccion-barra">
         <p>Accede para dar “Me gusta” a los videos, realizar comentarios y suscribirte.</p>
         <div class="icono-contenedor icono-acceder">
@@ -89,6 +99,7 @@
             <span id="acceder">Acceder</span></a>
         </div>
       </div>
+      <!-- Seccion de Explorar con boton de Tendencias, Musica, Videjuegos, Deportes y Aprendizaje -->
       <div class="seccion-barra">
         <h2>Explorar</h2>
         <a href="" class="barra-botones"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24" focusable="false"><path d="M19 3.87v9.77C19 17.7 15.86 21 12 21s-7-3.3-7-7.37v-.13c0-1.06.22-2.13.62-3.09.5-1.19 1.29-2.21 2.27-2.97.85-.66 1.83-1.14 2.87-1.65.39-.19.77-.38 1.15-.58.36-.19.72-.38 1.08-.56v3.22l1.55-1.04L19 3.87M20 2l-6 4V3c-.85.44-1.7.88-2.55 1.33-1.41.74-2.9 1.34-4.17 2.32-1.13.87-2.02 2.05-2.58 3.37-.46 1.09-.7 2.29-.7 3.48v.14C4 18.26 7.58 22 12 22s8-3.74 8-8.36V2zM9.45 12.89 14 10v5.7c0 1.82-1.34 3.3-3 3.3s-3-1.47-3-3.3c0-1.19.58-2.23 1.45-2.81z"></path></svg>
@@ -102,10 +113,12 @@
         <a href="" class="barra-botones"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24" focusable="false"><path d="M16 21h-2.28c-.35.6-.98 1-1.72 1s-1.38-.4-1.72-1H8v-1h8v1zm4-11c0 2.96-1.61 5.54-4 6.92V19H8v-2.08C5.61 15.54 4 12.96 4 10c0-4.42 3.58-8 8-8s8 3.58 8 8zm-5 8v-1.66l.5-.29C17.66 14.8 19 12.48 19 10c0-3.86-3.14-7-7-7s-7 3.14-7 7c0 2.48 1.34 4.8 3.5 6.06l.5.28V18h6z"></path></svg>
           <span>Aprendizaje</span></a>
       </div>
+      <!-- Seccion con el boton de explorar canales -->
       <div class="seccion-barra">
         <a href="" class="barra-botones"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false"><path d="M17 13h-4v4h-2v-4H7v-2h4V7h2v4h4v2zM12 3c-4.96 0-9 4.04-9 9s4.04 9 9 9 9-4.04 9-9-4.04-9-9-9m0-1c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2z"></path></svg>
           <span>Explorar canales</span></a>
       </div>
+      <!-- Seccion de MAs de Youtube con boton de Youtube Premium, Youtube Music y Youtube Kids -->
       <div class="seccion-barra">
         <h2>Mas de Youtube</h2>
         <a href="" class="barra-botones"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false">
@@ -141,6 +154,7 @@
           <path fill="#FFF" d="M10.3,9.89c0,0,0.5,4.08,0.51,4.19c0.06-0.04,3.79-2.58,3.79-2.58C13.71,11.07,11.07,10.14,10.3,9.89z"></path>
         </svg><span>Youtube Kids</span></a>
       </div>
+      <!-- Seccion con botones de configuracion, Historial de denuncias y Enviar Comentarios -->
       <div class="seccion-barra">
         <a href="" class="barra-botones"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24" focusable="false"><path d="M12 9.5c1.38 0 2.5 1.12 2.5 2.5s-1.12 2.5-2.5 2.5-2.5-1.12-2.5-2.5 1.12-2.5 2.5-2.5m0-1c-1.93 0-3.5 1.57-3.5 3.5s1.57 3.5 3.5 3.5 3.5-1.57 3.5-3.5-1.57-3.5-3.5-3.5zM13.22 3l.55 2.2.13.51.5.18c.61.23 1.19.56 1.72.98l.4.32.5-.14 2.17-.62 1.22 2.11-1.63 1.59-.37.36.08.51c.05.32.08.64.08.98s-.03.66-.08.98l-.08.51.37.36 1.63 1.59-1.22 2.11-2.17-.62-.5-.14-.4.32c-.53.43-1.11.76-1.72.98l-.5.18-.13.51-.55 2.24h-2.44l-.55-2.2-.13-.51-.5-.18c-.6-.23-1.18-.56-1.72-.99l-.4-.32-.5.14-2.17.62-1.21-2.12 1.63-1.59.37-.36-.08-.51c-.05-.32-.08-.65-.08-.98s.03-.66.08-.98l.08-.51-.37-.36L3.6 8.56l1.22-2.11 2.17.62.5.14.4-.32c.53-.44 1.11-.77 1.72-.99l.5-.18.13-.51.54-2.21h2.44M14 2h-4l-.74 2.96c-.73.27-1.4.66-2 1.14l-2.92-.83-2 3.46 2.19 2.13c-.06.37-.09.75-.09 1.14s.03.77.09 1.14l-2.19 2.13 2 3.46 2.92-.83c.6.48 1.27.87 2 1.14L10 22h4l.74-2.96c.73-.27 1.4-.66 2-1.14l2.92.83 2-3.46-2.19-2.13c.06-.37.09-.75.09-1.14s-.03-.77-.09-1.14l2.19-2.13-2-3.46-2.92.83c-.6-.48-1.27-.87-2-1.14L14 2z"></path></svg>
           <span>Configuracion</span></a>
@@ -151,7 +165,8 @@
         <a href="" class="barra-botones"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24" focusable="false"><path d="M13 14h-2v-2h2v2zm0-9h-2v6h2V5zm6-2H5v16.59l3.29-3.29.3-.3H19V3m1-1v15H9l-5 5V2h16z"></path></svg>
           <span>Enviar Comentarios</span></a>
       </div>
-      <div class="seccion-barra">
+      <!-- Seccion Footer -->
+      <footer class="seccion-barra">
         <div>
           <a href="">Acerca de</a>
           <a href="">Prensa</a>
@@ -169,9 +184,11 @@
           <a href="">Prueba funciones nuevas</a>
         </div>
         <p>© 2023 Google LLC</p>
-      </div>
+      </footer>
     </aside>
+    <!-- Contenido Principal (Barra de etiquetas, seccion de videos y seccion de shorts) -->
     <div class="main">
+      <!-- Barra de etiquetas -->
       <div class="contenedor-etiquetas flex">
         <a href="" class="etiquetasyt">Todos</a>
         <a href="" class="etiquetasyt">En tiempo real</a>
@@ -184,14 +201,14 @@
         <a href="" class="etiquetasyt">Balada romanticas</a>
         <a href="" class="etiquetasyt">Deep House</a>
         <a href="" class="etiquetasyt">Lista de reproduccion</a>
-        <a href="" class="etiquetasyt">Lista de reproduccion</a>
-        <a href="" class="etiquetasyt">Lista de reproduccion</a>
-        <a href="" class="etiquetasyt">Lista de reproduccion</a>
-        <a href="" class="etiquetasyt">Lista de reproduccion</a>
-        <a href="" class="etiquetasyt">Lista de reproduccion</a>
-        <a href="" class="etiquetasyt">Lista de reproduccion</a>
-        <a href="" class="etiquetasyt">Lista de reproduccion</a>.video
-        <a href="" class="etiquetasyt">Lista de reproduccion</a>
+        <a href="" class="etiquetasyt">Regueton</a>
+        <a href="" class="etiquetasyt">Series</a>
+        <a href="" class="etiquetasyt">Noticias</a>
+        <a href="" class="etiquetasyt">Futbol</a>
+        <a href="" class="etiquetasyt">Videojuegos</a>
+        <a href="" class="etiquetasyt">Bad Bunny</a>
+        <a href="" class="etiquetasyt">Phonk</a>
+        <a href="" class="etiquetasyt">Resumenes</a>
         <div class="flechaSiguiente">
           <div class="blur"></div>
           <div class="contenedor-flecha">
@@ -201,6 +218,7 @@
           </div>
         </div>
       </div>
+      <!-- Seccion de Videos (Contenedor Grid, a medida que crece la pantalla se van mostrando 2 videos mas, inicialmente se muestran 2, maximo de 6) -->
       <section class="seccion-videos">
           <div class="video">
             <a href="../html/video.html">
@@ -473,6 +491,7 @@
             </div>
           </div>
       </section>
+      <!-- Seccion de Shorts (se muestra dinamicamente el contenido dependiendo del ancho, maximo de 9) -->
       <section class="seccion-shorts">
         <div class="titulo-shorts">
           <svg class="logo-shorts" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false">
@@ -593,6 +612,7 @@
             </div>
           </div>
         </div>
+        <!-- Boton de mostrar mas -->
         <div class="contenedor-mostrar-mas">
           <button href="" class="mostrar-mas-shorts">
             <span>Mostrar mas</span>
@@ -602,6 +622,5 @@
       </section>
     </div>
   </main>
-
 </body>
 </html>

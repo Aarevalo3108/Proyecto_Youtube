@@ -9,8 +9,17 @@
   --color2l: #aaa;
   --color2ll: #ffffff33;
   --color2lb: #272727;
+  --colorHover: #323232;
   --color3: #020202;
   --color4: #3e9ae8;
+}
+::-webkit-scrollbar{
+  width: 10px;
+  background-color: var(--color1);
+}
+::-webkit-scrollbar-thumb{
+  background-color: var(--color2l);
+  border-radius: 10px;
 }
 *{
   box-sizing: border-box;
@@ -19,6 +28,9 @@
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
+}
+header{
+  z-index: 10;
 }
 body{
   background-color: var(--color1);
@@ -44,11 +56,13 @@ a{
   fill: var(--color2);
   width: 24px;
   height: 24px;
-  /* padding: 8px; */
   margin: 8px 4px;
 }
 .audio,.tres-puntos{
   margin: 0 6px;
+}
+.audio button, .tres-puntos button{
+  cursor: pointer;
 }
 .nav-icono-yt{
   margin-left: 28px;
@@ -68,6 +82,30 @@ a{
   fill: var(--color4);
   color: var(--color4);
 }
+button{
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  border: none;
+}
+.tres-lineas{
+  cursor: pointer;
+  background-color: var(--color1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 40px;
+  transition: 0.2s;
+}
+.tres-lineas:hover, .audio:hover{
+  background-color: var(--colorHover);
+}
+button:active, .tres-lineas:active{
+  background-color: var(--color1);
+}
 #barraDeNavegacion{
   width: 100%;
   display: flex;
@@ -75,6 +113,9 @@ a{
   align-items: center;
   height: 56px;
   padding: 0 12px;
+  background-color: var(--color1);
+  padding-left: 16px;
+  overflow: hidden;
 }
 .icono-contenedor a, .icono-contenedor{
   display: flex;
@@ -83,7 +124,7 @@ a{
 }
 .barraBusqueda{
   height: 100%;
-  width: 100%;
+  width: 750px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -96,6 +137,9 @@ a{
   line-height: 36px;
   border-radius: 18px;
   font-weight: 500;
+}
+.icono-acceder .nav-icono-acceder{
+  fill: var(--color4);
 }
 .icono-acceder svg{
   margin-right: 8px;
